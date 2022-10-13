@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Vin Checker</title>
+  </head>
+  <body>
+    <h1>Enter a VIN to get information breakdown</h1>
+
+    <div class="info">
+        <div>new line per vin</div>
+        <div>format is vin | year - model - manufacturer - sequential number - valid vin</div>
+    </div>
+    <div class="container">
+      <textarea type="text" id="vinList"></textarea>
+      <button id="decodeBtn">Decode</button>
+    </div>
+    <div class="resultContainer"></div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/vincheck.js"></script>
+</html>

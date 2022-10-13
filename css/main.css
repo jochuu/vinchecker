@@ -1,0 +1,93 @@
+:root {
+  --color-1: #e6bccd;
+  --color-2: #d295bf;
+  --color-3: #7e52a0;
+  --color-4: #012a36;
+  --color-5: #29274c;
+  --white: #fcfcfc;
+}
+
+html,
+body {
+  background: var(--color-5);
+  font-family: monospace;
+  color: var(--white);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--white);
+  opacity: 0.24; /* Firefox */
+}
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+        Introduced in IE 10.
+        See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+      */
+  -ms-user-select: none;
+  user-select: none;
+}
+button {
+  background-color: var(--color-2);
+  border: 0px;
+  border-radius: 4px;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  font-family: monospace;
+  color: var(--white);
+}
+
+h1 {
+  color: var(--color-1);
+}
+
+.title {
+  color: var(--color-1);
+}
+
+label {
+  color: var(--color-2);
+  font-weight: 600;
+}
+textarea:focus {
+  border: 0px;
+  background-color: var(--color-3);
+}
+textarea {
+  background-color: var(--color-4);
+  border: 0px;
+  border-radius: 4px;
+  min-height: 100px;
+  min-width: 300px;
+  color: var(--white);
+}
+.container {
+  display: flex;
+  border-top: 2px solid var(--color-3);
+  border-bottom: 2px solid var(--color-3);
+  max-width: 400px;
+  padding: 15px 0 15px 0;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid var(--color-3);
+  max-width: 400px;
+  padding: 15px 0 15px 0;
+}
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  padding: 15px 0 15px 0;
+}
+
+.resultContainer > div {
+  padding: 5px 0 5px 0;
+}
